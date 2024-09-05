@@ -239,12 +239,27 @@ crend() – Returns a constant reverse iterator pointing to the theoretical elem
 // using namespace std;
 // int main(){
 //     vector<int> vec = {10, 20, 5, 15, 3};
-//     sort(vec.begin(), vec.end());
+//     sort(vec.begin(), vec.end());  // sort in ascending order
 //     for(int i:vec){
 //         cout<<i<<" "<<vec[i]<<endl;
 //     }
 //     return 0;
 // }
+
+// #include<iostream>
+// #include<algorithm>
+// #include<vector>
+// using namespace std;
+// int main(){
+//     vector<int> vec = {10, 20, 5, 15, 3};
+//     sort(vec.begin(), vec.end(), greater<int>()); // sort in descending order.
+//     for(int i:vec){
+//         cout<<i<<" "<<endl;
+//     }
+
+//     return 0;
+// }
+
 
 // reverse a vector
 // #include <iostream>
@@ -274,4 +289,41 @@ crend() – Returns a constant reverse iterator pointing to the theoretical elem
 //     for(int i : vec2){
 //         cout<<i<<" "; // Output: 1 2 3 4 5
 //     }
+// }
+
+
+// find the maximum and minimum value in the vector
+
+// #include <iostream>
+// #include<vector>
+// #include<algorithm>
+// using namespace std;
+// int main(){
+//     vector<int> vec = {10, 30, 40, 5, 15};
+
+//     auto max_it = max_element(vec.begin(), vec.end());
+//     auto min_it = min_element(vec.begin(), vec.end());
+
+//     cout<< "Max element: "<<*max_it<<"\n";
+//     cout<< "Min element: "<<*min_it<<"\n";
+// }
+
+
+// 12 check if vecotr is empty or not?
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+// int main(){
+//     vector<int> vec;
+//     if(vec.empty()){
+//         cout<<"Yes vector is empty"<<endl;
+//     }else{
+//         cout<<"No vector is empty"<<endl;
+//     }
+
+//     vec.push_back(10);
+//     cout<<"After adding an element, the vector size has : "<<vec.size()<<" ";
+
+//     return 0;
 // }
