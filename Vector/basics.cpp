@@ -16,7 +16,6 @@ it is the class templates that conatins the vector conatiner and its member func
 
 it defined the inside <vector> header file.
 
-
 Key Characteristics of Vectors:
 
 dynamically sizing: it is automatically resisze the size of the vector when the insert or delete the element. 
